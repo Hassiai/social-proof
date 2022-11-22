@@ -1,0 +1,165 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+
+    background-image: url(bg-pattern-top-mobile.svg),
+        url(bg-pattern-bottom-mobile.svg);
+    background-repeat: no-repeat;
+    background-position: top left,
+        bottom -45rem right 0;
+
+    font-family: 'League Spartan', sans-serif;
+    font-size: 0.9375rem;
+    padding: 4em 0;
+}
+
+
+.container {
+    width: 1440;
+    max-width: 80%;
+    margin: 0 auto;
+
+}
+
+.col_text {
+
+    text-align: center;
+}
+
+#heading {
+
+    font-weight: 700;
+    color: hsl(300, 43%, 22%);
+    font-size: 2rem;
+    line-height: 1;
+    margin-bottom: 0.5em;
+}
+
+.col_text p {
+    line-height: 1.5;
+    color: hsl(303, 10%, 53%);
+    margin-bottom: 1.5em;
+}
+
+
+
+.col_rating {
+    margin-bottom: 2em;
+}
+
+.rating {
+    background-color: hsl(300, 24%, 96%);
+    text-align: center;
+    color: hsl(300, 43%, 22%);
+    font-weight: 700;
+    line-height: 1.5;
+    padding: 0.5em;
+    margin-bottom: 1em;
+    border-radius: 5px;
+}
+
+.col {
+    background-color: hsl(300, 43%, 22%);
+    padding: 2em;
+    margin-bottom: 1em;
+    color: hsl(0, 0%, 100%);
+    line-height: 1.5;
+    border-radius: 10px;
+}
+
+.buyer-details {
+    display: flex;
+    padding-bottom: 1em;
+}
+
+.buyer-img {
+    margin-right: 1em;
+}
+
+.buyer-img img {
+    border-radius: 100%;
+}
+
+.buyer-text {
+    align-self: center;
+}
+
+.verified {
+    color: hsl(333, 80%, 67%);
+}
+
+
+@media (min-width: 500px) {
+    body {
+        background-image: url(bg-pattern-top-desktop.svg),
+            url(bg-pattern-bottom-desktop.svg);
+        background-repeat: no-repeat;
+        background-position: top -3rem left,
+            top 5rem right;
+        padding: 0;
+    }
+
+    section {
+        padding: 5em 0;
+    }
+
+    .row {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .col_text {
+        text-align: left;
+        width: 35%;
+    }
+
+    #heading {
+        font-size: 3rem;
+    }
+
+    .col_rating {
+        width: 50%;
+        margin-top: 2em;
+    }
+
+    .rating {
+        width: 27rem;
+        padding: 1em;
+        display: flex;
+    }
+
+    .rating p,
+    .icon {
+        margin-left: 1em;
+    }
+
+
+    .left-to-right {
+        margin-left: 3em;
+    }
+
+    .left-to-right1 {
+        margin-left: 6em;
+    }
+
+    .col+.col {
+        margin-left: 1.5em;
+
+    }
+
+    .one {
+
+        margin-bottom: -1em;
+        margin-top: 1em;
+    }
+
+    .two {
+        margin-bottom: -2em;
+        margin-top: 2em;
+    }
+
+
+}
